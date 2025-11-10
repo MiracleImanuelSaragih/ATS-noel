@@ -1,0 +1,83 @@
+KERNELBASE.dll     00007FFD3EDD3867  Unknown               Unknown  Unknown
+PS D:\MATKUL SEM.5\Machine Vision\ATS> & D:/Download/Anaconda/python.exe "d:/MATKUL SEM.5/Machine Vision/ATS/src/main.py"
+============================================================
+Program Klasifikasi EMNIST Dimulai pada Fri Nov  7 00:15:48 2025
+Log disimpan di: D:\MATKUL SEM.5\Machine Vision\ATS\output\evaluation_log.txt
+============================================================
+Memuat dan melakukan sampling data seimbang...
+Total sampel final: 13000 (26 kelas)
+
+---------- FASE 2: EVALUASI LOOCV FINAL ----------
+[HOG] Ekstraksi fitur: Orient=9, PPC=(8, 8), CPB=(2, 2)...
+Ekstraksi HOG: 100%|███████████████████████████████████████████████████████████████████████████████████| 13000/13000 [00:05<00:00, 2217.40it/s]
+Dimensi fitur HOG: (13000, 144)
+[LOOCV] Evaluasi FINAL (Kernel=linear, C=10.0)...
+PERINGATAN: LOOCV pada 13000 sampel bisa memakan waktu lama!
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 4 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  42 tasks      | elapsed:  2.0min
+[Parallel(n_jobs=-1)]: Done 192 tasks      | elapsed:  8.6min
+[Parallel(n_jobs=-1)]: Done 442 tasks      | elapsed: 19.5min
+[Parallel(n_jobs=-1)]: Done 792 tasks      | elapsed: 35.1min
+[Parallel(n_jobs=-1)]: Done 1242 tasks      | elapsed: 56.5min
+[Parallel(n_jobs=-1)]: Done 1792 tasks      | elapsed: 83.1min
+[Parallel(n_jobs=-1)]: Done 2442 tasks      | elapsed: 126.3min
+[Parallel(n_jobs=-1)]: Done 3192 tasks      | elapsed: 173.4min
+[Parallel(n_jobs=-1)]: Done 4042 tasks      | elapsed: 207.7min
+[Parallel(n_jobs=-1)]: Done 4992 tasks      | elapsed: 245.7min
+[Parallel(n_jobs=-1)]: Done 6042 tasks      | elapsed: 287.4min
+[Parallel(n_jobs=-1)]: Done 7192 tasks      | elapsed: 333.3min
+[Parallel(n_jobs=-1)]: Done 8442 tasks      | elapsed: 383.5min
+[Parallel(n_jobs=-1)]: Done 9792 tasks      | elapsed: 437.8min
+[Parallel(n_jobs=-1)]: Done 11242 tasks      | elapsed: 496.6min
+[Parallel(n_jobs=-1)]: Done 12792 tasks      | elapsed: 560.0min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 568.5min finished
+Akurasi LOOCV: 81.21%
+Waktu total: 9.48 jam
+qt.qpa.fonts: Unable to open default EUDC font: "EUDC.TTE"
+[VISUALISASI] Confusion Matrix disimpan ke: D:\MATKUL SEM.5\Machine Vision\ATS\output\confusion_matrix_hog_svm_linear.png
+
+Akurasi Akhir: 81.21%
+--- EKSEKUSI PROGRAM SELESAI ---
+PS D:\MATKUL SEM.5\Machine Vision\ATS> & D:/Download/Anaconda/python.exe "d:/MATKUL SEM.5/Machine Vision/ATS/src/main.py"
+============================================================
+Program Klasifikasi EMNIST Dimulai pada Fri Nov  7 09:44:58 2025
+Log disimpan di: D:\MATKUL SEM.5\Machine Vision\ATS\output\evaluation_log.txt
+============================================================
+Memuat dan melakukan sampling data seimbang...
+Total sampel final: 13000 (26 kelas)
+
+---------- FASE 2: EVALUASI LOOCV FINAL ----------
+[HOG] Ekstraksi fitur: Orient=9, PPC=(8, 8), CPB=(2, 2)...
+Ekstraksi HOG: 100%|███████████████████████████████████████████████████████████████████████████████████| 13000/13000 [00:09<00:00, 1375.33it/s] 
+Dimensi fitur HOG: (13000, 144)
+[LOOCV] Evaluasi FINAL (Kernel=linear, C=10.0)...
+PERINGATAN: LOOCV pada 13000 sampel bisa memakan waktu lama!
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 4 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  42 tasks      | elapsed:  1.9min
+[Parallel(n_jobs=-1)]: Done 192 tasks      | elapsed:  8.1min
+[Parallel(n_jobs=-1)]: Done 442 tasks      | elapsed: 18.6min
+[Parallel(n_jobs=-1)]: Done 792 tasks      | elapsed: 33.1min
+[Parallel(n_jobs=-1)]: Done 1242 tasks      | elapsed: 52.1min
+[Parallel(n_jobs=-1)]: Done 1792 tasks      | elapsed: 75.7min
+[Parallel(n_jobs=-1)]: Done 2442 tasks      | elapsed: 107.5min
+[Parallel(n_jobs=-1)]: Done 3192 tasks      | elapsed: 155.9min
+D:\Download\Anaconda\Lib\site-packages\sklearn\svm\_base.py:305: ConvergenceWarning: Solver terminated early (max_iter=30000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  warnings.warn(
+[Parallel(n_jobs=-1)]: Done 4042 tasks      | elapsed: 195.7min
+[Parallel(n_jobs=-1)]: Done 4992 tasks      | elapsed: 237.4min
+[Parallel(n_jobs=-1)]: Done 6042 tasks      | elapsed: 283.2min
+[Parallel(n_jobs=-1)]: Done 7192 tasks      | elapsed: 332.6min
+[Parallel(n_jobs=-1)]: Done 8442 tasks      | elapsed: 740.5min
+[Parallel(n_jobs=-1)]: Done 9792 tasks      | elapsed: 813.3min
+[Parallel(n_jobs=-1)]: Done 11242 tasks      | elapsed: 873.3min
+[Parallel(n_jobs=-1)]: Done 12792 tasks      | elapsed: 936.4min
+[Parallel(n_jobs=-1)]: Done 13000 out of 13000 | elapsed: 946.4min finished
+Akurasi LOOCV: 80.88%
+Waktu total: 15.77 jam
+qt.qpa.fonts: Unable to open default EUDC font: "EUDC.TTE"
+[VISUALISASI] Confusion Matrix disimpan ke: D:\MATKUL SEM.5\Machine Vision\ATS\output\confusion_matrix_hog_svm_linear.png
+
+Akurasi Akhir: 80.88%
+--- EKSEKUSI PROGRAM SELESAI ---
+PS D:\MATKUL SEM.5\Machine Vision\ATS> 
+ *  History restored 
